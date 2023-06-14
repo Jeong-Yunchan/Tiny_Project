@@ -6,3 +6,6 @@
 ------------------
 ## Counter ##
 <img width="30%" src="https://github.com/Jeong-Yunchan/Tiny_Project/assets/101458262/517b67bd-139a-4153-a6a1-62a6fcc33603">
+
+## Carousel ##
+<img width="30%" src="https://github.com/Jeong-Yunchan/Tiny_Project/assets/101458262/fb431fac-5ce2-43ee-9327-919c440c6528">

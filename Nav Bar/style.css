@@ -1,0 +1,67 @@
+*{
+  margin : 0;
+  padding : 0;
+}
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+
+.menu{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  margin:0;
+  background-color: rgb(218, 244, 251);
+  
+}
+
+.list-container > li{
+  float: left;
+  width:140px;
+  position:relative;
+  padding:20px;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+.li-container {
+  display: none;
+  width : 140px;
+  position: absolute;
+  
+}
+.li-container > li {
+  padding : 10px;
+}
+
+.li-container > li:hover {
+  background-color: rgb(226, 254, 254);
+}
+
+.list-container> li:hover  > ul{
+  display: block;
+  background-color: rgb(195, 247, 230);
+  top:64px;
+  cursor: pointer;
+  
+}
+
+.sns{
+  display: inline;
+  padding: 20px;
+}
+
+.sns > a {
+  padding : 5px;
+}
+

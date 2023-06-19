@@ -1,0 +1,151 @@
+*{
+  margin : 0;
+  padding : 0;
+}
+ul li{
+  list-style: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+body{
+  background-image: url(src/back_img.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu{
+  display: flex;
+  justify-content:space-between;
+  text-align: center;
+  margin:0;
+  background-color: rgba(218, 244, 251, 0.6);
+
+  
+}
+
+.list-container > li{
+  float: left;
+  width:140px;
+  position:relative;
+  padding:20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  
+}
+
+.li-container {
+  display: none;
+  width : 140px;
+  position: absolute;
+  
+}
+.li-container > li {
+  padding : 10px;
+}
+
+.li-container > li:hover {
+  background-color: rgb(226, 254, 254, 0.8);
+}
+
+.list-container> li:hover  > ul{
+  display: block;
+  background-color: rgb(195, 247, 230,0.8);
+  top:64px;
+  cursor: pointer;
+  
+}
+
+.side-bar{
+  padding: 30px 25px 0 0;
+}
+
+.side-bar > i {
+  cursor: pointer;
+}
+
+.side-container > ul {
+  display: none;
+  width: 300px;
+  height: 448px;
+  background-color: white;
+  position: absolute;
+  right: 0px;
+  top :64px;
+  border-radius: 30px 0px 0px 30px;
+  background-color: rgb(153, 238, 253);
+  animation-name:boxDelay;
+  animation-timing-function:linear;
+  animation-duration:0.4s
+}
+@-webkit-keyframes boxDelay{
+  from{
+    right:-300px;
+  }
+  to{
+    right: 0px;
+  }
+}
+
+.side-container > ul > li{
+  padding: 35px;
+}
+
+.side-container > ul > li:hover{
+  cursor: pointer;
+  background-color: rgb(223, 250, 241);
+  border-radius: 30px 0 0 30px; 
+}
+
+.side-list.visible-true{
+  display: block;
+}
+
+@media screen and (max-width:710px) {
+  .li-container {
+    display: none;
+    width : 60px;
+    font-size: 15px;
+    position: absolute;
+  }
+  .list-container > li{
+    width:60px;
+    padding:20px;
+    font-size: 20px;    
+  }
+
+  .side-container > ul {
+    display: none;
+    width: 150px;
+    position: absolute;
+    right: 0px;
+    top :64px;
+    background-color: rgb(153, 238, 253);
+    animation-name:boxDelay;
+    animation-timing-function:linear;
+    animation-duration:0.5s
+  }
+  @keyframes boxDelay{
+    from{
+      right:-300px;
+    }
+    to{
+      right: 0px;
+    }
+  }
+}
+
+.main{
+  height: 100vh;
+}
